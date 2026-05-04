@@ -1,170 +1,734 @@
-/* Global styles */
+/* ============================================================
+   GLOBAL STYLES
+   Base typography, layout, and gradient background
+============================================================ */
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  color: #fff;
   background: linear-gradient(135deg, #ff4f9a, #7b5cff, #35c9ff, #ffd45a);
   background-attachment: fixed;
+  line-height: 1.5;
 }
 
-/* Header */
-.site-header {
+/* Centering container used across all sections */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ============================================================
+   NAVBAR
+============================================================ */
+
+.navbar {
+  padding: 20px 0;
+}
+
+.nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
 }
 
 .logo {
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
 }
 
-.main-nav a {
+.nav-logo {
+  width: 20%;
+  border-radius: 2px;
+}
+
+.nav-links a {
   margin-left: 24px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-weight: 500;
 }
 
-/* Hero */
+/* ============================================================
+   HERO SECTION
+============================================================ */
+
+/* ============================================================
+   HERO SECTION — CLEAN VERSION (ONE IMAGE, ONE LOGO)
+============================================================ */
+
 .hero {
-  padding: 80px 40px;
-  text-align: left;
-  max-width: 900px;
+  padding: 80px 0;
 }
 
-.hero-tagline {
-  font-size: 1rem;
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* ------------------------------
+   LEFT SIDE TEXT
+------------------------------ */
+.hero-text {
+  flex: 1;
+}
+
+.hero-tag {
+  font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 8px;
+  opacity: 0.9;
 }
 
 .hero-title {
-  font-size: 3rem;
-  margin: 0 0 24px;
+  font-size: 2.8rem;
+  margin: 10px 0;
 }
 
-/* Buttons */
-.btn {
-  border: none;
-  padding: 12px 28px;
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  max-width: 450px;
+}
+
+/* ------------------------------
+   RIGHT SIDE SINGLE IMAGE
+------------------------------ */
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ------------------------------
+   LOGO POSITION (BOTTOM LEFT)
+------------------------------ */
+.hero-logo-bottom {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 140px;
+}
+
+/* ============================================================
+   $25,000 GRANT SECTION — CLEAN TWO-COLUMN LAYOUT
+   Uses site-wide gradient background
+============================================================ */
+
+.grant-section {
+  padding: 90px 0;
+  background: inherit; /* Uses your main gradient */
+}
+
+.grant-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* ------------------------------
+   LEFT SIDE TEXT
+------------------------------ */
+.grant-text {
+  flex: 1;
+}
+
+.grant-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.grant-description {
+  font-size: 1.1rem;
+  max-width: 550px;
+  margin-bottom: 20px;
+}
+
+.grant-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.grant-list li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* CTA BUTTON */
+.grant-btn {
+  background: #ffff00ff;
+  color: #000;
+  padding: 14px 32px;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 700;
+  border: none;
   cursor: pointer;
 }
 
+/* ------------------------------
+   RIGHT SIDE LOGO
+------------------------------ */
+.grant-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.grant-logo {
+  width: 80%;
+  max-width: 350px;
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 .btn.primary {
-  background: #000000;
-  color: #ffffff;
+  background: #ffff00ff;
+  color: #000;
 }
 
 .btn.secondary {
-  background: #ffffff;
-  color: #000000;
+  background: #fff;
+  color: #000;
 }
 
-/* Sections */
-section {
-  padding: 60px 40px;
-  max-width: 1100px;
-  margin: 0 auto;
+/* ============================================================
+   FUNDING & FREE RESOURCES SECTION
+   Title + button centered, text + bullets left-aligned
+============================================================ */
+
+.resources-section {
+  padding: 90px 0;
+  background: inherit; /* Uses your main gradient */
 }
 
-/* Grant, funding, etc. */
-.grant,
-.funding,
-.community,
-.industries,
-.cities,
-.testimonials,
-.final-cta {
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
-  margin-bottom: 24px;
+/* CENTERED TITLE */
+.resources-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
-/* Funding list */
-.funding ul {
+/* LEFT-ALIGNED PARAGRAPH */
+.resources-description {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+/* LEFT-ALIGNED BULLET LIST */
+.resources-list {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  text-align: left;
   list-style: none;
-  padding-left: 0;
 }
 
-.funding li::before {
-  content: "• ";
+.resources-list li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
 }
 
-/* Community layout */
-.community {
+/* CENTERED BUTTON */
+.resources-btn-wrapper {
+  text-align: center;
+}
+
+.resources-btn {
+  background: #ffff00ff; /* Your new yellow */
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+/* ============================================================
+   COMMUNITY SECTION — Title centered, content left-aligned
+============================================================ */
+
+.community-section {
+  padding: 90px 0;
+  background: inherit; /* Uses your main gradient */
+}
+
+.community-inner {
   display: flex;
-  gap: 24px;
   align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
+/* ------------------------------
+   LEFT SIDE CONTENT
+------------------------------ */
 .community-text {
   flex: 1;
 }
 
-.community-image {
-  flex: 1;
-  min-height: 200px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+/* Centered title */
+.community-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
-/* Industries grid */
+/* Left-aligned paragraph */
+.community-description {
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Logo */
+.community-logo {
+  width: 180px;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.community-btn {
+  background: #ffff00ff; /* Your yellow */
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* ------------------------------
+   RIGHT SIDE IMAGE
+------------------------------ */
+.community-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.community-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ============================================================
+   INDUSTRIES SECTION — GRID + CORNER LOGOS
+============================================================ */
+
+.industries-section {
+  padding: 90px 0;
+  background: inherit; /* Your site gradient */
+  position: relative;
+}
+
+/* TITLE */
+.industries-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+}
+
+.industry-box {
+  background: #6a0dad; /* Purple from your screenshot */
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* BUTTON */
+.industries-btn-wrapper {
+  text-align: center;
+}
+
+.industries-btn {
+  background: #ffff00ff; /* Your yellow */
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+/* CORNER LOGOS */
+.industries-logo-left,
+.industries-logo-right {
+  position: absolute;
+  bottom: 20px;
+  width: 120px;
+  opacity: 0.9;
+}
+
+.industries-logo-left {
+  left: 20px;
+}
+
+.industries-logo-right {
+  right: 20px;
+}
+
+/* ============================================================
+   CITIES WE SERVE — 24 IMAGE GRID WITH BACKGROUND CARDS
+============================================================ */
+
+.cities-section {
+  padding: 90px 0;
+  background: inherit; /* Your site gradient */
+}
+
+.cities-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* BACKGROUND CARD WRAPPER */
+.city-card-wrapper {
+  background: rgba(255, 255, 255, 0.15); /* subtle white tint */
+  padding: 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.city-card-wrapper:hover {
+  transform: scale(1.03);
+}
+
+/* CITY IMAGE */
+.city-card {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================================
+   TESTIMONIALS SECTION — GRADIENT CARDS + PHOTOS
+============================================================ */
+
+.testimonials-section {
+  padding: 90px 0;
+  background: inherit; /* Your site gradient */
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.testimonial-card {
+  background: inherit; /* Uses your site gradient INSIDE the card */
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+/* PHOTO */
+.testimonial-photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+/* QUOTE */
+.testimonial-quote {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* NAME */
+.testimonial-name {
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ============================================================
+   FINAL CTA SECTION — LOGO LEFT, TEXT RIGHT, GRADIENT BACKGROUND
+============================================================ */
+
+.final-cta-section {
+  padding: 100px 0;
+  background: inherit; /* Your site gradient */
+}
+
+.final-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE LOGO */
+.final-cta-logo-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.final-cta-logo {
+  width: 260px;
+  max-width: 100%;
+  transform: rotate(-8deg); /* matches your screenshot tilt */
+}
+
+/* RIGHT SIDE CONTENT */
+.final-cta-content {
+  flex: 1;
+  text-align: center;
+}
+
+.final-cta-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.final-cta-btn {
+  background: #ffff00ff; /* your yellow */
+  color: #000;
+  padding: 16px 40px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* SUBTEXT */
+.final-cta-subtext {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+
+/* ============================================================
+   SECTION BASE STYLES
+============================================================ */
+
+section {
+  padding: 70px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+/* ============================================================
+   RESOURCES LIST
+============================================================ */
+
+.resource-list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.resource-list li {
+  margin-bottom: 8px;
+}
+
+/* ============================================================
+   COMMUNITY SECTION
+============================================================ */
+
+.community-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.community-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ============================================================
+   INDUSTRY GRID
+============================================================ */
+
 .industry-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 16px 0;
+  margin: 20px 0;
 }
 
 .industry-grid span {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 18px;
   border-radius: 999px;
 }
 
-/* Cities */
-.city-list {
+/* ============================================================
+   CITIES GRID
+============================================================ */
+
+.city-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
-/* Testimonials */
+/* ============================================================
+   TESTIMONIALS
+============================================================ */
+
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .testimonial {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 16px;
-  border-radius: 16px;
-}
-
-.testimonial .name {
-  margin-top: 8px;
-  font-weight: 600;
-}
-
-/* Final CTA */
-.final-cta {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 260px;
   text-align: center;
 }
 
-/* Footer */
-.site-footer {
+.testimonial img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* ============================================================
+   COMING SOON PAGE — CLEAN + CENTERED + GRADIENT BACKGROUND
+============================================================ */
+
+.coming-soon-body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+ background: linear-gradient(135deg, #6a0dad, #1e90ff);
+ /* uses your site gradient */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 24px;
-  font-size: 0.85rem;
-  background: rgba(0, 0, 0, 0.4);
+}
+
+.coming-soon-wrapper {
+  max-width: 700px;
+  padding: 40px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+}
+
+.coming-soon-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.coming-soon-text {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
 }

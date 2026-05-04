@@ -1,135 +1,449 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Atlas Empire – She Does Something</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- HEADER: Logo + Navigation -->
-  <header class="site-header">
-    <div class="logo">ATLAS EMPIRE</div>
-    <nav class="main-nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Community</a>
-      <a href="#">Apply</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Empire – She Does Something</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- HERO SECTION: Main headline + CTA -->
+  <body>
+    <!-- ============================================================
+       NAVIGATION BAR
+       Full-width bar with centered content inside a container
+  ============================================================ -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <!-- <div class="logo"> -->
+        <img
+          class="nav-logo"
+          src="assets/logos/atlasEmpire.jpg"
+          alt="Atlas Empire Logo"
+        />
+        <!-- </div> -->
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Packages</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============================================================
+       HERO SECTION
+       Full-width gradient background with centered text + hero image
+  ============================================================ -->
   <section class="hero">
-    <div class="hero-content">
-      <p class="hero-tagline">Do Your Thing Boss! This Opportunity is Next Level!</p>
-      <h1 class="hero-title">She Does Something</h1>
-      <button class="btn primary">APPLY FOR GRANT NOW</button>
+  <div class="container hero-inner">
+
+    <!-- LEFT SIDE: TEXT BLOCK -->
+    <div class="hero-text">
+      <h4 class="hero-tag">Do Your Thing Boss!</h4>
+      <h1 class="hero-title">This Opportunity is Next Level!</h1>
+      <h2 class="hero-subtitle">
+        Success Something Inc. is coming through with an unbelievable shot
+        at leveling up your hustle!
+      </h2>
+      <button class="btn primary" onclick="window.location.href='coming-soon.html'">GET THE GRANT NOW</button>
     </div>
-    <!-- Optional: hero image area if you add one later -->
-  </section>
 
-  <!-- GRANT SECTION: $25,000 info -->
-  <section class="grant">
-    <h2>Get the $25,000 to help you succeed!</h2>
-    <p>
-      We’re giving away $25,000 to help women entrepreneurs start or grow their business.
-      Apply now for your chance to win and get access to exclusive resources and mentorship opportunities.
-    </p>
-    <button class="btn secondary">GET THE BLUEPRINT</button>
-  </section>
+    <!-- RIGHT SIDE: SINGLE IMAGE + LOGO -->
+    <div class="hero-visual">
 
-  <!-- FUNDING & RESOURCES SECTION -->
-  <section class="funding">
-    <h2>Need Funding & Free Resources to Do Your Thing?</h2>
-    <ul>
-      <li>Grants for women entrepreneurs</li>
-      <li>Free business resources</li>
-      <li>Mentorship programs</li>
-      <li>Networking opportunities</li>
-    </ul>
-    <button class="btn secondary">ACCESS FREE RESOURCES</button>
-  </section>
+      <div class="hero-img-wrapper">
+        <!-- Single hero image -->
+        <img 
+          src="assets/hero1.jpg" 
+          alt="Hero Image" 
+          class="hero-img"
+        />
 
-  <!-- COMMUNITY SECTION -->
-  <section class="community">
+        <!-- Only the Start Something Resource Grant logo -->
+        <img 
+          src="assets/logos/startSomethingResourceGrant.png" 
+          alt="Start Something Resource Grant Logo" 
+          class="hero-logo-bottom"
+        />
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- ============================================================
+       $25,000 GRANT SECTION
+  ============================================================ -->
+   <section class="grant-section">
+  <div class="container grant-inner flipped">
+
+    <!-- LEFT SIDE: LOGO (now on the left) -->
+    <div class="grant-visual">
+      <img 
+        src="assets/logos/experienceSomething.png" 
+        alt="Experience Something Logo" 
+        class="grant-logo"
+      />
+    </div>
+
+    <!-- RIGHT SIDE: TEXT CONTENT (now on the right) -->
+    <div class="grant-text">
+      <h2 class="grant-title">Get the $25,000 to help you succeed!</h2>
+
+      <p class="grant-description">
+        Looking to take your business to extraordinary heights? Whether you're just starting out 
+        or ready to scale, we've got the tools, resources, and opportunities to push your business 
+        to the top.
+      </p>
+
+      <ul class="grant-list">
+        <li>Expand your reach</li>
+        <li>Increase your profits</li>
+        <li>Tap into exclusive success resources</li>
+      </ul>
+
+      <button class="btn grant-btn" onclick="window.location.href='coming-soon.html'">GET THE GRANT NOW!</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- ============================================================
+       FUNDING & RESOURCES SECTION
+  ============================================================ -->
+    <section class="resources-section">
+  <div class="container">
+
+    <!-- CENTERED TITLE -->
+    <h2 class="resources-title">Need Funding & Free Resources to Do Your Thing?</h2>
+
+    <!-- LEFT-ALIGNED CONTENT BLOCK -->
+    <div class="resources-content">
+      <p class="resources-description">
+        Whether you're launching something new or leveling up what you already have, 
+        we've got free tools, guides, and resources to help you move forward with confidence.
+      </p>
+
+      <ul class="resources-list">
+        <li>Funding opportunities</li>
+        <li>Business development tools</li>
+        <li>Free guides & templates</li>
+        <li>Community support</li>
+        <li>Expert insights</li>
+      </ul>
+    </div>
+
+    <!-- CENTERED BUTTON -->
+    <div class="resources-btn-wrapper">
+      <button class="btn resources-btn" onclick="window.location.href='coming-soon.html'">ACCESS FREE RESOURCES</button>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ============================================================
+       COMMUNITY SECTION
+  ============================================================ -->
+    <section class="community-section">
+  <div class="container community-inner">
+
+    <!-- LEFT SIDE: TEXT + LOGO + BUTTON -->
     <div class="community-text">
-      <h2>Want to Thrive in a Powerful, Global, and Supportive Community?</h2>
-      <p>Join thousands of women entrepreneurs who are building successful businesses and making an impact.</p>
-      <button class="btn secondary">JOIN THE COMMUNITY</button>
-    </div>
-    <div class="community-image">
-      <!-- Placeholder for image of people on a video call -->
-    </div>
-  </section>
 
-  <!-- INDUSTRIES SECTION -->
-  <section class="industries">
-    <h2>Explore Opportunities Across Every Industry</h2>
-    <div class="industry-grid">
-      <span>Beauty &amp; Personal Care</span>
-      <span>Education</span>
-      <span>Entertainment</span>
-      <span>Fashion</span>
-      <span>Food &amp; Beverage</span>
-      <span>Health</span>
-      <span>Products</span>
-      <span>Services</span>
-      <span>Nonprofit</span>
-      <span>Consulting</span>
-      <span>More Coming Soon</span>
+      <!-- Centered title -->
+      <h2 class="community-title">
+        Want to Thrive in a Powerful, Global, and Supportive Community?
+      </h2>
+
+      <!-- Left-aligned paragraph -->
+      <p class="community-description">
+        Connect with entrepreneurs, creators, and innovators from around the world. 
+        Share ideas, get support, and grow alongside a community that wants to see you win.
+      </p>
+
+      <!-- Logo -->
+      <img 
+        src="assets/logos/careerSomething.png" 
+        alt="Career Something Logo" 
+        class="community-logo"
+      />
+
+      <!-- Button -->
+      <button class="btn community-btn" onclick="window.location.href='coming-soon.html'">JOIN THE COMMUNITY</button>
+
     </div>
-    <button class="btn secondary">EXPLORE INDUSTRIES</button>
-  </section>
 
-  <!-- CITIES SECTION -->
-  <section class="cities">
-    <h2>Cities We Serve</h2>
-    <div class="city-list">
-      <span>Atlanta</span>
-      <span>Phoenix</span>
-      <span>Nashville</span>
-      <span>Chicago</span>
-      <span>Detroit</span>
-      <span>Ghana</span>
-      <span>New Orleans</span>
-      <span>Dallas</span>
-      <span>Houston</span>
-      <span>New York</span>
-      <span>Toronto</span>
-      <span>Tampa</span>
-      <span>Paris</span>
-      <span>London</span>
-      <span>Panama</span>
+    <!-- RIGHT SIDE: IMAGE -->
+    <div class="community-visual">
+      <img 
+        src="assets/community.jpg" 
+        alt="Community Image" 
+        class="community-image"
+      />
     </div>
-  </section>
 
-  <!-- TESTIMONIALS SECTION -->
-  <section class="testimonials">
-    <h2>What People Are Saying</h2>
-    <div class="testimonial-grid">
-      <article class="testimonial">
-        <p>“This program gave me the confidence and resources to finally launch my business.”</p>
-        <p class="name">– Name Here</p>
-      </article>
-      <article class="testimonial">
-        <p>“The community and mentorship have been life-changing for my growth as an entrepreneur.”</p>
-        <p class="name">– Name Here</p>
-      </article>
-      <article class="testimonial">
-        <p>“I’ve never felt so supported while building something that matters.”</p>
-        <p class="name">– Name Here</p>
-      </article>
+  </div>
+</section>
+
+
+    <!-- ============================================================
+       INDUSTRIES SECTION
+  ============================================================ -->
+    <section class="industries-section">
+  <div class="container">
+
+    <!-- CENTERED TITLE -->
+    <h2 class="industries-title">
+      Explore Opportunities Across Every Industry
+    </h2>
+
+    <!-- INDUSTRIES GRID -->
+    <div class="industries-grid">
+      <div class="industry-box">Beauty & Personal Care</div>
+      <div class="industry-box">Education</div>
+      <div class="industry-box">Entertainment</div>
+      <div class="industry-box">Finance</div>
+      <div class="industry-box">Food & Beverage</div>
+      <div class="industry-box">Health</div>
+      <div class="industry-box">Real Estate</div>
+      <div class="industry-box">Sustainability</div>
+      <div class="industry-box">Tech</div>
+      <div class="industry-box">Non-profit</div>
+      <div class="industry-box">Creatives</div>
+      <div class="industry-box">More Coming Soon</div>
     </div>
-  </section>
 
-  <!-- FINAL CTA SECTION -->
-  <section class="final-cta">
-    <h2>Ready to Start Something Powerful?</h2>
-    <button class="btn primary">GET THE BLUEPRINT</button>
-  </section>
+    <!-- CENTERED BUTTON -->
+    <div class="industries-btn-wrapper">
+      <button class="btn industries-btn" onclick="window.location.href='coming-soon.html'">EXPLORE ALL INDUSTRIES</button>
+    </div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© Atlas Empire | All Rights Reserved | Privacy Policy | Terms &amp; Conditions</p>
-  </footer>
-</body>
+    <!-- CORNER LOGOS -->
+    <img 
+      src="assets/logos/successSomething.png" 
+      alt="Success Something Logo" 
+      class="industries-logo-left"
+    />
+
+    <img 
+      src="assets/logos/successSomething.png" 
+      alt="Success Something Logo" 
+      class="industries-logo-right"
+    />
+
+  </div>
+</section>
+
+
+    <!-- ============================================================
+       CITIES SECTION
+  ============================================================ -->
+   <section class="cities-section">
+  <div class="container">
+
+    <!-- CENTERED TITLE -->
+    <h2 class="cities-title">Cities We Serve</h2>
+
+    <!-- GRID OF 24 CITY CARDS -->
+    <div class="cities-grid">
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Atlanta.png" alt="Atlanta Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Chattanooga.png" alt="Chattanooga Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Fortworth.png" alt="Fort Worth Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Jamaica.png" alt="Jamaica Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Miami.png" alt="Miami Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Austin.png" alt="Austin Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Chicago.png" alt="Chicago Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Ghana.png" alt="Ghana Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Nashville.png" alt="Nashville Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Charlotte.png" alt="Charlotte Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Detroit.png" alt="Detroit Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/NewOrleans.png" alt="New Orleans Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Dallas.png" alt="Dallas Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Houston.png" alt="Houston Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Huntsville.png" alt="Huntsville Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/NewYork.png" alt="New York Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/WashingtonDC.png" alt="Washington DC Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Phoenix.png" alt="Phoenix Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/LosAngeles.png" alt="Los Angeles Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/SanFrancisco.png" alt="San Francisco Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Toronto.png" alt="Toronto Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Tampa.png" alt="Tampa Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Paris.png" alt="Paris Boss" class="city-card" />
+      </div>
+
+      <div class="city-card-wrapper">
+        <img src="assets/cities/Panama.png" alt="Panama Boss" class="city-card" />
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- ============================================================
+       TESTIMONIALS SECTION
+  ============================================================ -->
+    <section class="testimonials-section">
+  <div class="container">
+
+    <!-- CENTERED TITLE -->
+    <h2 class="testimonials-title">What People Are Saying</h2>
+
+    <!-- TESTIMONIAL GRID -->
+    <div class="testimonials-grid">
+
+      <!-- CARD 1 -->
+      <div class="testimonial-card">
+        <img src="assets/people/alicia.jpg" alt="Alicia" class="testimonial-photo" />
+        <p class="testimonial-quote">
+          “Success Something helped me take my business to the next level. 
+          The resources were exactly what I needed.”
+        </p>
+        <p class="testimonial-name">— Alicia, Beauty Entrepreneur</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="testimonial-card">
+        <img src="assets/people/marcus.jpg" alt="Marcus" class="testimonial-photo" />
+        <p class="testimonial-quote">
+          “The community support is unmatched. I’ve made connections that changed everything for me.”
+        </p>
+        <p class="testimonial-name">— Marcus, Tech Innovator</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="testimonial-card">
+        <img src="assets/people/jasmine.jpg" alt="Jasmine" class="testimonial-photo" />
+        <p class="testimonial-quote">
+          “The $25k grant opportunity gave me hope and direction. 
+          I finally feel like I’m moving forward.”
+        </p>
+        <p class="testimonial-name">— Jasmine, Non-profit Founder</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ============================================================
+       FINAL CALL TO ACTION
+  ============================================================ -->
+    <section class="final-cta-section">
+  <div class="container final-cta-inner">
+
+    <!-- LEFT SIDE: LOGO -->
+    <div class="final-cta-logo-wrapper">
+      <img 
+        src="assets/logos/speakSomething.png" 
+        alt="Speak Something Logo" 
+        class="final-cta-logo"
+      />
+    </div>
+
+    <!-- RIGHT SIDE: TEXT + BUTTON -->
+    <div class="final-cta-content">
+
+      <h2 class="final-cta-title">
+        Ready to Start Something Powerful?
+      </h2>
+
+      <button class="btn final-cta-btn" onclick="window.location.href='coming-soon.html'">GET THE GRANT NOW</button>
+
+      <p class="final-cta-subtext">
+        Don’t wait — opportunities like this don’t come around often.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer">
+      <div class="container">
+        © Atlas Empire | All Rights Reserved | Privacy Policy | Terms of Use
+      </div>
+    </footer>
+  </body>
 </html>
