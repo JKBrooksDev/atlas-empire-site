@@ -411,11 +411,11 @@ body {
 }
 
 .industries-logo-left {
-  left: 20px;
+  left: 30px;
 }
 
 .industries-logo-right {
-  right: 20px;
+ right: 30px;
 }
 
 /* ============================================================
@@ -445,7 +445,7 @@ body {
 
 /* BACKGROUND CARD WRAPPER */
 .city-card-wrapper {
-  background: rgba(255, 255, 255, 0.15); /* subtle white tint */
+  background: rgba(255, 255, 255, 0.8); /* subtle white tint */
   padding: 12px;
   border-radius: 20px;
   backdrop-filter: blur(6px);
@@ -461,6 +461,7 @@ body {
 /* CITY IMAGE */
 .city-card {
   width: 100%;
+  height: 180px;
   border-radius: 16px;
   object-fit: cover;
   display: block;
