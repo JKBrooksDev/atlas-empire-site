@@ -17,7 +17,7 @@
         <!-- <div class="logo"> -->
         <img
           class="nav-logo"
-          src="assets/logos/atlasEmpire.jpg"
+          src="assets/logos/atlasEmpire.png"
           alt="Atlas Empire Logo"
         />
         <!-- </div> -->
@@ -30,41 +30,76 @@
       </div>
     </header>
 
-    <!-- ============================================================
-       HERO SECTION
-       Full-width gradient background with centered text + hero image
-  ============================================================ -->
-  <section class="hero">
+   <!-- ============================================================
+     HERO SECTION — USING LOGO INSTEAD OF TEXT
+============================================================ -->
+<section class="hero">
   <div class="container hero-inner">
 
-    <!-- LEFT SIDE: TEXT BLOCK -->
+    <!-- LEFT SIDE: TEXT + LOGO -->
     <div class="hero-text">
-      <h4 class="hero-tag">Do Your Thing Boss!</h4>
-      <h1 class="hero-title">This Opportunity is Next Level!</h1>
-      <h2 class="hero-subtitle">
-        Success Something Inc. is coming through with an unbelievable shot
-        at leveling up your hustle!
-      </h2>
-      <button class="btn primary" onclick="window.location.href='coming-soon.html'">GET THE GRANT NOW</button>
+      <h4 class="hero-tag">DO YOUR THING BOSS!</h4>
+
+      <!-- Success Something Logo -->
+      <img 
+        src="assets/logos/successSomething.png" 
+        alt="Success Something Logo" 
+        class="hero-logo-main"
+      />
+
+      <p class="hero-subtitle">
+        Empowering you to take your next step with confidence and opportunity.
+      </p>
     </div>
 
-    <!-- RIGHT SIDE: SINGLE IMAGE + LOGO -->
+    <!-- RIGHT SIDE: HERO IMAGE -->
     <div class="hero-visual">
+      <img 
+        src="assets/hero.png" 
+        alt="Hero Woman" 
+        class="hero-img"
+      />
+    </div>
 
-      <div class="hero-img-wrapper">
-        <!-- Single hero image -->
-        <img 
-          src="assets/hero1.jpg" 
-          alt="Hero Image" 
-          class="hero-img"
-        />
+  </div>
+</section>
 
-        <!-- Only the Start Something Resource Grant logo -->
-        <img 
-          src="assets/logos/startSomethingResourceGrant.png" 
-          alt="Start Something Resource Grant Logo" 
-          class="hero-logo-bottom"
-        />
+<!-- ============================================================
+     PROGRAM LOGO GRID (6-TILE SECTION)
+============================================================ -->
+<section class="program-grid">
+  <div class="container">
+
+    <div class="grid-wrapper">
+
+      <!-- Tile 1 -->
+      <div class="grid-item">
+        <img src="assets/logos/successSomething.png" alt="Success Something Logo">
+      </div>
+
+      <!-- Tile 2 -->
+      <div class="grid-item">
+        <img src="assets/logos/startSomethingResourceGrant.png" alt="Start Something Resource Grant Logo">
+      </div>
+
+      <!-- Tile 3 -->
+      <div class="grid-item">
+        <img src="assets/logos/experienceSomething.png" alt="Experience Something Logo">
+      </div>
+
+      <!-- Tile 4 -->
+      <div class="grid-item">
+        <img src="assets/logos/careerSomething.png" alt="Career Something Logo">
+      </div>
+
+      <!-- Tile 5 -->
+      <div class="grid-item">
+        <img src="assets/logos/speakSomething.png" alt="Speak Something Logo">
+      </div>
+
+      <!-- Tile 6 -->
+      <div class="grid-item">
+        <img src="assets/logos/bossSomething.png" alt="Boss Something Logo">
       </div>
 
     </div>
@@ -72,6 +107,53 @@
   </div>
 </section>
 
+<!-- ============================================================
+     START SOMETHING RESOURCE GRANT — PROMO SECTION
+============================================================ -->
+<section class="grant-promo">
+  <div class="container promo-inner">
+
+    <!-- LEFT SIDE: PERSON IMAGE -->
+    <div class="promo-image">
+      <img 
+        src="assets/people/startGrantPerson.jpg" 
+        alt="Start Something Grant Person"
+      />
+    </div>
+
+    <!-- RIGHT SIDE: TEXT + LOGO -->
+    <div class="promo-text">
+
+      <h2 class="promo-title">
+        Get the <span class="highlight">$Start Something</span> Resource Grant
+      </h2>
+
+      <p class="promo-description">
+        Success Something Inc. is coming through with an unbelievable shot at 
+        leveling up your hustle! The Start Something Grant is shaking up the 
+        game, putting money in pockets, and turning dreams into real deals.
+      </p>
+
+      <ul class="promo-points">
+        <li>💰 Get Structured</li>
+        <li>💰 Get Paid</li>
+        <li>💰 Get Plugged Into the Fastest-Growing Global Business Movement</li>
+      </ul>
+
+      <img 
+        src="assets/logos/startSomethingResourceGrant.png" 
+        alt="Start Something Resource Grant Logo"
+        class="promo-logo"
+      />
+
+      <button class="btn primary" onclick="window.location.href='coming-soon.html'">
+        GET THE GRANT NOW
+      </button>
+
+    </div>
+
+  </div>
+</section>
 
 
     <!-- ============================================================
