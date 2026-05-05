@@ -515,6 +515,70 @@ body {
   height: 26px;
 }
 
+/* ============================================================
+   ABOUT US SECTION
+============================================================ */
+
+.about-section {
+  padding: 140px 0;
+  background: inherit;
+}
+
+.about-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 800px;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.about-paragraph {
+  font-size: 1.18rem;
+  margin-bottom: 28px;
+  line-height: 1.65;
+}
+
+.about-images {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  justify-content: flex-start;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* VERTICAL ABOUT US */
+.about-label {
+  font-size: 5.2rem;
+  font-weight: 900;
+  color: #ceff06;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 18px;
+  white-space: nowrap;
+  line-height: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: -10px;
+}
+
 
 /* ============================================================
    FUNDING & FREE RESOURCES SECTION
@@ -1240,5 +1304,31 @@ section {
 @media (max-width: 900px) {
   .packages-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE ABOUT US SECTION */
+@media (max-width: 900px) {
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-label {
+    order: -1; /* moves ABOUT US to the top */
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    margin-top: 20px;
+  }
+
+  .about-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img {
+    max-width: 90%;
   }
 }
