@@ -425,6 +425,96 @@ body {
   font-weight: 800;
 }
 
+/* ============================================================
+   PACKAGES SECTION — EXACT TEXT VERSION
+============================================================ */
+
+.packages-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.packages-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.packages-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.package-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+  position: relative;
+  min-height: 100%;
+}
+
+.package-heading {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.package-text {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.package-list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.package-list li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.package-price {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+/* POPULAR BADGE */
+.package-box.popular {
+  border: 3px solid #ceff06;
+}
+
+.package-badge {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: linear-gradient(135deg, #ff4f9a, #7b5cff, #35c9ff);
+  padding: 10px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.package-badge img {
+  width: 26px;
+  height: 26px;
+}
+
 
 /* ============================================================
    FUNDING & FREE RESOURCES SECTION
@@ -1143,5 +1233,12 @@ section {
 
   .step-photo {
     height: 220px;
+  }
+}
+
+/* MOBILE PACKAGES SECTION */
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
   }
 }
