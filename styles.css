@@ -25,6 +25,40 @@ body {
 }
 
 /* ============================================================
+   GLOBAL BUTTON STYLES
+============================================================ */
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.btn.primary {
+  background: #ceff06; /* exact match from old site */
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn.primary:hover {
+  background: #b9e505; /* slightly darker version for hover */
+  transform: translateY(-2px);
+}
+
+
+
+
+/* ============================================================
    NAVBAR
 ============================================================ */
 
@@ -213,6 +247,12 @@ body {
 /* ============================================================
    GRANT INFO SECTION
 ============================================================ */
+.grant-info-header-logo {
+  width: 260px;
+  margin-bottom: 20px;
+  display: block;
+}
+
 
 .grant-info {
   padding: 100px 0;
