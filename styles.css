@@ -177,12 +177,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 260px;
 }
 
 .grid-item img {
   width: 100%;
   max-width: 260px;
   border-radius: 12px;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ============================================================
@@ -970,134 +973,192 @@ body {
   max-width: 550px;
 }
 
-
-
-/* ============================================================
-   FUNDING & FREE RESOURCES SECTION
-   Title + button centered, text + bullets left-aligned
-============================================================ */
-
-.resources-section {
-  padding: 90px 0;
-  background: inherit; /* Uses your main gradient */
-}
-
-/* CENTERED TITLE */
-.resources-title {
-  text-align: center;
+/* HEADLINE */
+.app-headline {
   font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 25px;
-}
-
-/* LEFT-ALIGNED PARAGRAPH */
-.resources-description {
-  max-width: 700px;
-  margin: 0 auto 20px auto;
+  color: #fff;
   text-align: left;
-  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
-/* LEFT-ALIGNED BULLET LIST */
-.resources-list {
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  text-align: left;
-  list-style: none;
-}
-
-.resources-list li {
-  margin-bottom: 10px;
-  font-size: 1.05rem;
-}
-
-/* CENTERED BUTTON */
-.resources-btn-wrapper {
-  text-align: center;
-}
-
-.resources-btn {
-  background: #ffff00ff; /* Your new yellow */
-  color: #000;
-  padding: 14px 32px;
-  border-radius: 999px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-}
-
-/* ============================================================
-   COMMUNITY SECTION — Title centered, content left-aligned
-============================================================ */
-
-.community-section {
-  padding: 90px 0;
-  background: inherit; /* Uses your main gradient */
-}
-
-.community-inner {
+/* LOGO + APP TEXT */
+.app-logo-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  gap: 12px;
 }
 
-/* ------------------------------
-   LEFT SIDE CONTENT
------------------------------- */
-.community-text {
-  flex: 1;
+.app-logo-app {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #00FFAA;
+  letter-spacing: 2px;
 }
 
-/* Centered title */
-.community-title {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-/* Left-aligned paragraph */
-.community-description {
-  max-width: 600px;
-  text-align: left;
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-}
-
-/* Logo */
-.community-logo {
-  width: 180px;
-  margin-bottom: 25px;
-}
-
-/* Button */
-.community-btn {
-  background: #ffff00ff; /* Your yellow */
-  color: #000;
-  padding: 14px 32px;
-  border-radius: 999px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-}
-
-/* ------------------------------
-   RIGHT SIDE IMAGE
------------------------------- */
-.community-visual {
+/* DEVICE MOCKUPS */
+.app-devices {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
   justify-content: center;
 }
 
-.community-image {
+.device {
+  position: relative;
   width: 100%;
-  max-width: 450px;
-  border-radius: 20px;
-  object-fit: cover;
+  max-width: 420px;
 }
+
+.device-frame {
+  width: 100%;
+  display: block;
+}
+
+.device-screen {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  width: 84%;
+  height: 84%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* FIX: Make images fit inside device screens */
+
+/* Tablet screen alignment */
+.device.tablet .device-screen {
+  top: 12%;
+  left: 17%;
+  width: 60%;
+  height: 68%;
+}
+
+/* Phone screen alignment */
+.device.phone .device-screen {
+  top: 16%;
+  left: 29%;
+  width: 40%;
+  height: 60%;
+}
+
+
+
+/* PHONE SMALLER */
+.device.phone {
+  max-width: 260px;
+  margin-left: 40px;
+}
+
+/* 1. Purple gradient background + soft glow */
+.app-section {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 255, 255, 0.15),
+      transparent 60%
+    ),
+    linear-gradient(135deg, #5a1ea1, #2d0f63);
+  padding: 140px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional subtle vignette */
+.app-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.25),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* 2. Headline centered + larger like old site */
+.app-headline {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+/* 3. Button larger + glow + centered */
+.app-top-btn-wrapper {
+  text-align: center !important;
+  margin-bottom: 40px;
+}
+
+.app-top-btn {
+  font-size: 1.25rem;
+  padding: 18px 40px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(255, 170, 0, 0.45);
+  transition: transform 0.2s ease;
+}
+
+.app-top-btn:hover {
+  transform: scale(1.05);
+}
+
+/* 4. Device layout: overlap + rotation like old design */
+.app-devices {
+  position: relative;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Tablet stays straight */
+.device.tablet {
+  max-width: 420px;
+  z-index: 2;
+}
+
+/* Phone overlaps + angled right */
+.device.phone {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  max-width: 240px;
+  transform: rotate(12deg);
+  z-index: 3;
+}
+
+/* 5. Tighten spacing on right side */
+.app-content-side {
+  padding: 20px 40px;
+}
+
+.app-text {
+  max-width: 520px;
+  font-size: 1.2rem;
+  line-height: 1.55;
+}
+
+/* 6. Logo row tighter */
+.app-logo-row {
+  gap: 6px;
+}
+
+.app-logo-app {
+  font-size: 2.4rem;
+  margin-top: 6px;
+}
+
+/* Rotate the phone screen slightly to match the angled frame */
+.device.phone .device-screen {
+  transform: rotate(13deg);
+  transform-origin: center;
+}
+
 
 /* ============================================================
    CITIES WE SERVE — 24 IMAGE GRID WITH BACKGROUND CARDS
@@ -1132,6 +1193,10 @@ body {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: transform 0.2s ease;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Hover effect */
@@ -1142,10 +1207,43 @@ body {
 /* CITY IMAGE */
 .city-card {
   width: 100%;
-  height: 180px;
+  height: 100%;
   border-radius: 16px;
   object-fit: cover;
+  object-position: center;
   display: block;
+}
+
+.city-card[data-city="Atlanta"] {
+  object-position: center 1%;
+}
+
+.city-card[data-city="Chattanooga"] {
+  object-position: center 30%;
+}
+
+.city-card[data-city="Jamaica"] {
+  object-position: center 35%;
+}
+
+.city-card[data-city="Charlotte"] {
+  object-position: center 80%;
+}
+
+.city-card[data-city="Houston"] {
+  object-position: center 80%;
+}
+
+.city-card[data-city="New York"] {
+  object-position: center 25%;
+}
+
+.city-card[data-city="Tampa"] {
+  object-position: center 25%;
+}
+
+.city-card[data-city="Paris"] {
+  object-position: center 40%;
 }
 
 /* ============================================================
@@ -1283,44 +1381,6 @@ section {
 .section-text {
   max-width: 700px;
   margin-bottom: 20px;
-}
-
-/* ============================================================
-   RESOURCES LIST
-============================================================ */
-
-.resource-list {
-  list-style: none;
-  margin: 20px 0;
-}
-
-.resource-list li {
-  margin-bottom: 8px;
-}
-
-/* ============================================================
-   COMMUNITY SECTION
-============================================================ */
-
-.community-inner {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.community-image img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-/* ============================================================
-   CITIES GRID
-============================================================ */
-
-.city-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
 }
 
 /* ============================================================
@@ -1604,14 +1664,18 @@ section {
   }
 }
 
-/* MOBILE PACKAGES SECTION */
+/* ===========================
+MOBILE PACKAGES SECTION 
+==============================*/
 @media (max-width: 900px) {
   .packages-grid {
     grid-template-columns: 1fr;
   }
 }
 
-/* MOBILE ABOUT US SECTION */
+/* ===========================
+MOBILE ABOUT US SECTION 
+==============================*/
 @media (max-width: 900px) {
   .about-inner {
     flex-direction: column;
@@ -1637,7 +1701,9 @@ section {
   }
 }
 
-/* MOBILE GREATNESS SECTION */
+/* ===========================
+MOBILE GREATNESS SECTION 
+==============================*/
 @media (max-width: 900px) {
   .greatness-inner {
     flex-direction: column;
@@ -1650,7 +1716,9 @@ section {
   }
 }
 
-/*INDUSTRY RESPONSIVE BREAKPOINTS*/
+/*==============================
+INDUSTRY RESPONSIVE BREAKPOINTS
+================================*/
 
 /* Tablet: 2 columns */
 @media (max-width: 1024px) {
@@ -1764,11 +1832,20 @@ section {
 @media (max-width: 1024px) {
   .app-hero {
     flex-direction: column;
+    gap: 40px;
+  }
+
+  .app-headline {
+    text-align: center;
   }
 
   .app-content-side {
     text-align: center;
     padding: 30px;
+  }
+
+  .app-logo-row {
+    justify-content: center;
   }
 
   .app-text {
@@ -1777,6 +1854,15 @@ section {
 
   .app-top-btn-wrapper {
     text-align: center;
+  }
+
+  .device.phone {
+    margin-left: 0;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    transform: rotate(8deg);
+    margin-top: -20px;
   }
 }
 
@@ -1788,5 +1874,22 @@ section {
   .app-full-image {
     max-height: 380px;
     border-radius: 16px;
+  }
+
+  .device {
+    max-width: 300px;
+  }
+
+  .app-headline {
+    font-size: 2.2rem;
+  }
+
+  .device.tablet {
+    max-width: 300px;
+  }
+
+  .device.phone {
+    max-width: 160px;
+    transform: rotate(6deg);
   }
 }
