@@ -1159,6 +1159,116 @@ body {
   transform-origin: center;
 }
 
+/* ============================================
+   CAREER SOMETHING SECTION (Full Background)
+   ============================================ */
+.career-section {
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+
+  /* Woman background image */
+  background: url('assets/people/alicia.jpg') center/cover no-repeat;
+
+  /* Vertically center the boxes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 20px;
+}
+
+/* Soft overlay to help boxes pop */
+.career-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.08); /* very light darkening */
+  z-index: 1;
+}
+
+/* Wrapper for left + right content */
+.career-content {
+  position: relative;
+  z-index: 2; /* ensures content sits above overlay */
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ============================================
+   LEFT SIDE (Logo + Hiring Box)
+   ============================================ */
+.career-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* logo + box left aligned */
+  gap: 20px;
+}
+
+/* Logo above the left gradient box */
+.career-logo {
+  width: 340px;
+  height: auto;
+}
+
+/* ============================================
+   RIGHT SIDE (City Hub Box)
+   ============================================ */
+.career-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* right box aligned to the right */
+}
+
+/* ============================================
+   GRADIENT BOXES (Both Left + Right)
+   ============================================ */
+.career-box {
+  width: 400px; /* medium width like screenshot */
+  padding: 28px;
+  border-radius: 24px;
+
+  /* Same color as old site */
+background: rgb(53, 212, 219);
+
+  /* White text for contrast */
+  color: white;
+
+  /* Soft shadow for depth */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  /* Slight blur for a modern glassy feel */
+  backdrop-filter: blur(4px);
+}
+
+/* Headings inside gradient boxes */
+.career-box h2 {
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Paragraph text inside left box */
+.career-box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* City list styling */
+.career-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.career-box ul li {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
 
 /* ============================================================
    CITIES WE SERVE — 24 IMAGE GRID WITH BACKGROUND CARDS
@@ -1891,5 +2001,35 @@ INDUSTRY RESPONSIVE BREAKPOINTS
   .device.phone {
     max-width: 160px;
     transform: rotate(6deg);
+  }
+}
+
+/* ============================================
+    CAREER SOMETHING MOBILE RESPONSIVE STYLING
+   ============================================ */
+@media (max-width: 900px) {
+
+  /* Stack boxes vertically */
+  .career-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* Center align both sides */
+  .career-left,
+  .career-right {
+    align-items: center;
+  }
+
+  /* Slightly smaller logo on mobile */
+  .career-logo {
+    width: 210px;
+  }
+
+  /* Boxes become full width on mobile */
+  .career-box {
+    width: 90%;
+    max-width: 420px;
   }
 }
