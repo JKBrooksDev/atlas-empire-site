@@ -40,7 +40,7 @@ body {
 }
 
 .btn.primary {
-  background: #ceff06; /* exact match from old site */
+   background: linear-gradient(135deg, #00ffe0, #ffff00);
   color: #000;
   padding: 14px 32px;
   border-radius: 999px;
@@ -828,7 +828,7 @@ body {
 }
 
 .speak-btn {
-  background: #00ff85;
+   background: linear-gradient(135deg, #00ffe0, #ffff00);
   color: #000;
   padding: 16px 40px;
   border-radius: 999px;
@@ -1558,7 +1558,7 @@ background: rgb(53, 212, 219);
   margin-top: 14px;
   align-self: flex-start;
 
-  background-color: #ffd600; /* bright yellow */
+  background: linear-gradient(135deg, #00ffe0, #ffff00);
   color: #000000;
   border: none;
   border-radius: 999px;
@@ -1619,7 +1619,7 @@ background: rgb(53, 212, 219);
 
 /* BUTTON */
 .final-cta-btn {
-  background: #ffff00ff; /* your yellow */
+   background: linear-gradient(135deg, #00ffe0, #ffff00);
   color: #000;
   padding: 16px 40px;
   border-radius: 999px;
