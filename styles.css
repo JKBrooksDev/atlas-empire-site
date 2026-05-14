@@ -444,6 +444,12 @@ body {
 .packages-section {
   padding: 100px 0;
   text-align: center;
+  background: linear-gradient(
+    180deg,
+    #ff4f5e,
+    #ff6fb1,
+    #b36bff
+  );
 }
 
 .packages-title {
@@ -533,7 +539,12 @@ body {
 
 .about-section {
   padding: 140px 0;
-  background: inherit;
+  background: linear-gradient(
+    90deg,
+    #ff4f5e,
+    #ff6fb1,
+    #b36bff
+  );
 }
 
 .about-inner {
@@ -597,7 +608,7 @@ body {
 
 .greatness-section {
   padding: 120px 0;
-  background: inherit; /* uses your gradient */
+  background: rgb(53, 212, 219);
 }
 
 .greatness-inner {
@@ -652,6 +663,7 @@ body {
 .industry-section {
   padding: 120px 0;
   text-align: center;
+  background: linear-gradient(90deg, #7b5cff, #35c9ff, #ffd45a);
 }
 
 .industry-title {
@@ -721,6 +733,12 @@ body {
 .speak-section {
   padding: 120px 0;
   text-align: center;
+   background: linear-gradient(
+    90deg,
+    #ff4f5e,
+    #ff6fb1,
+    #b36bff
+  );
 }
 
 /* TOP HEADLINE */
@@ -844,6 +862,12 @@ body {
 .soldout-section {
   padding: 120px 0;
   text-align: center;
+   background: linear-gradient(
+    90deg,
+    #ff4f5e,
+    #ff6fb1,
+    #b36bff
+  );
 }
 
 .soldout-title {
@@ -1361,7 +1385,7 @@ background: rgb(53, 212, 219);
 
 .testimonials-section {
   padding: 90px 0;
-  background: inherit; /* Your site gradient */
+ background: rgb(53, 212, 219); /* Your site gradient */
 }
 
 .testimonials-title {
