@@ -1574,6 +1574,72 @@ background: rgb(53, 212, 219);
   background-color: #ffea5c;
 }
 
+/* ============================================
+   CHANGING THE WORLD SECTION
+   ============================================ */
+.changing-world-section {
+  width: 100%;
+  padding: 60px 20px;
+
+  /* Vertical gradient: red → purple */
+  background: linear-gradient(
+    180deg,
+    #ff4f5e,
+    #ff6fb1,
+    #b36bff
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changing-world-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT IMAGE */
+.changing-world-image {
+  flex: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+.changing-world-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* RIGHT TEXT */
+.changing-world-text {
+  flex: 1;
+  color: rgb(53, 212, 219);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+    text-align: center; 
+  align-items: center; 
+}
+
+.changing-world-text h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.changing-world-text h3 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+}
+
 
 /* ============================================================
    FINAL CTA SECTION — LOGO LEFT, TEXT RIGHT, GRADIENT BACKGROUND
@@ -2231,5 +2297,27 @@ INDUSTRY RESPONSIVE BREAKPOINTS
 
   .boss-cta-button {
     align-self: center;
+  }
+}
+
+/* ============================================
+   CHANGING THE WORLD RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+  .changing-world-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .changing-world-text h2 {
+    font-size: 30px;
+  }
+
+  .changing-world-text h3 {
+    font-size: 26px;
+  }
+
+  .changing-world-image img {
+    max-width: 320px;
   }
 }
