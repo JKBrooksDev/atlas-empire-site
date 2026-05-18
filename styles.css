@@ -40,7 +40,7 @@ body {
 }
 
 .btn.primary {
-   background: linear-gradient(135deg, #00ffe0, #ffff00);
+  background: linear-gradient(135deg, #00ffe0, #ffff00);
   color: #000;
   padding: 14px 32px;
   border-radius: 999px;
@@ -444,12 +444,7 @@ body {
 .packages-section {
   padding: 100px 0;
   text-align: center;
-  background: linear-gradient(
-    180deg,
-    #ff4f5e,
-    #ff6fb1,
-    #b36bff
-  );
+  background: linear-gradient(180deg, #ff4f5e, #ff6fb1, #b36bff);
 }
 
 .packages-title {
@@ -539,12 +534,7 @@ body {
 
 .about-section {
   padding: 140px 0;
-  background: linear-gradient(
-    90deg,
-    #ff4f5e,
-    #ff6fb1,
-    #b36bff
-  );
+  background: linear-gradient(90deg, #ff4f5e, #ff6fb1, #b36bff);
 }
 
 .about-inner {
@@ -733,12 +723,7 @@ body {
 .speak-section {
   padding: 120px 0;
   text-align: center;
-   background: linear-gradient(
-    90deg,
-    #ff4f5e,
-    #ff6fb1,
-    #b36bff
-  );
+  background: linear-gradient(90deg, #ff4f5e, #ff6fb1, #b36bff);
 }
 
 /* TOP HEADLINE */
@@ -846,7 +831,7 @@ body {
 }
 
 .speak-btn {
-   background: linear-gradient(135deg, #00ffe0, #ffff00);
+  background: linear-gradient(135deg, #00ffe0, #ffff00);
   color: #000;
   padding: 16px 40px;
   border-radius: 999px;
@@ -862,12 +847,7 @@ body {
 .soldout-section {
   padding: 120px 0;
   text-align: center;
-   background: linear-gradient(
-    90deg,
-    #ff4f5e,
-    #ff6fb1,
-    #b36bff
-  );
+  background: linear-gradient(90deg, #ff4f5e, #ff6fb1, #b36bff);
 }
 
 .soldout-title {
@@ -1016,7 +996,7 @@ body {
 .app-logo-app {
   font-size: 2.2rem;
   font-weight: 900;
-  color: #00FFAA;
+  color: #00ffaa;
   letter-spacing: 2px;
 }
 
@@ -1068,8 +1048,6 @@ body {
   width: 40%;
   height: 60%;
 }
-
-
 
 /* PHONE SMALLER */
 .device.phone {
@@ -1192,7 +1170,7 @@ body {
   min-height: 650px;
 
   /* Woman background image */
-  background: url('assets/people/alicia.jpg') center/cover no-repeat;
+  background: url("assets/people/alicia.jpg") center/cover no-repeat;
 
   /* Vertically center the boxes */
   display: flex;
@@ -1256,7 +1234,7 @@ body {
   border-radius: 24px;
 
   /* Same color as old site */
-background: rgb(53, 212, 219);
+  background: rgb(53, 212, 219);
 
   /* White text for contrast */
   color: white;
@@ -1385,7 +1363,7 @@ background: rgb(53, 212, 219);
 
 .testimonials-section {
   padding: 90px 0;
- background: rgb(53, 212, 219); /* Your site gradient */
+  background: rgb(53, 212, 219); /* Your site gradient */
 }
 
 .testimonials-title {
@@ -1462,13 +1440,7 @@ background: rgb(53, 212, 219);
   gap: 30px;
 
   /* Modernized rainbow gradient background */
-  background: linear-gradient(
-    135deg,
-    #ff6fb1,
-    #ff9f6b,
-    #ffd66b,
-    #7fd8ff
-  );
+  background: linear-gradient(135deg, #ff6fb1, #ff9f6b, #ffd66b, #7fd8ff);
   border-radius: 28px;
   padding: 32px;
   color: #ffffff;
@@ -1549,13 +1521,7 @@ background: rgb(53, 212, 219);
   padding: 24px;
 
   /* Same modern rainbow gradient family, slightly adjusted */
-  background: linear-gradient(
-    135deg,
-    #ff6fb1,
-    #ff9f6b,
-    #ffd66b,
-    #7fd8ff
-  );
+  background: linear-gradient(135deg, #ff6fb1, #ff9f6b, #ffd66b, #7fd8ff);
   color: #ffffff;
 
   display: flex;
@@ -1606,12 +1572,7 @@ background: rgb(53, 212, 219);
   padding: 60px 20px;
 
   /* Vertical gradient: red → purple */
-  background: linear-gradient(
-    180deg,
-    #ff4f5e,
-    #ff6fb1,
-    #b36bff
-  );
+  background: linear-gradient(180deg, #ff4f5e, #ff6fb1, #b36bff);
 
   display: flex;
   justify-content: center;
@@ -1647,8 +1608,8 @@ background: rgb(53, 212, 219);
   display: flex;
   flex-direction: column;
   gap: 6px;
-    text-align: center; 
-  align-items: center; 
+  text-align: center;
+  align-items: center;
 }
 
 .changing-world-text h2 {
@@ -1664,65 +1625,146 @@ background: rgb(53, 212, 219);
   margin: 10px 0 0 0;
 }
 
-
-/* ============================================================
-   FINAL CTA SECTION — LOGO LEFT, TEXT RIGHT, GRADIENT BACKGROUND
-============================================================ */
-
-.final-cta-section {
-  padding: 100px 0;
-  background: inherit; /* Your site gradient */
-}
-
-.final-cta-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-/* LEFT SIDE LOGO */
-.final-cta-logo-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.final-cta-logo {
-  width: 260px;
-  max-width: 100%;
-  transform: rotate(-8deg); /* matches your screenshot tilt */
-}
-
-/* RIGHT SIDE CONTENT */
-.final-cta-content {
-  flex: 1;
+/* ============================================
+   FINAL PROMO / CONTACT SECTION
+   ============================================ */
+.final-promo-section {
+  width: 100%;
+  padding: 60px 20px;
   text-align: center;
+
+  /* EXACT gradient from old site */
+  background: linear-gradient(180deg, #ff4f5e, #ff6fb1, #b36bff);
+
+  color: #ffffff;
 }
 
-.final-cta-title {
-  font-size: 2.6rem;
-  font-weight: 700;
-  margin-bottom: 25px;
+/* WRAPPER: side-by-side on desktop */
+.final-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-/* BUTTON */
-.final-cta-btn {
-   background: linear-gradient(135deg, #00ffe0, #ffff00);
-  color: #000;
-  padding: 16px 40px;
-  border-radius: 999px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 15px;
+/* LEFT & RIGHT columns */
+.final-left,
+.final-right {
+  flex: 1;
+}
+
+/* Logos */
+.left-logo,
+.right-logo {
+  max-width: 260px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.final-logos img {
+  max-width: 260px;
+  width: 100%;
+}
+
+/* TAGLINE */
+.final-tagline {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 20px 0 40px 0;
+}
+
+/* PEOPLE GRID */
+.final-people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+}
+
+/* PERSON BOXES */
+.person-box {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.person-box img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* BACKGROUND COLORS (exact) */
+/* .person-box.pink { background: #ff4f8b; } */
+/* .person-box.orange { background: #ff7f4f; } */
+/* .person-box.yellow { background: #ffcf4f; } */
+.person-box.purple {
+  background: #b36bff;
+}
+
+/* SHAPES (exact match) */
+.angled-top {
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+}
+
+.angled-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.diagonal {
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
 }
 
 /* SUBTEXT */
-.final-cta-subtext {
-  font-size: 1.1rem;
-  opacity: 0.9;
+.final-subtext {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 20px 0 30px 0;
+}
+
+/* BUTTON (you will update color) */
+.final-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #00ffe0, #ffff00);
+  color: #000000;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: 0.2s ease;
+}
+
+.final-button:hover {
+  background: linear-gradient(270deg, #00ffe0, #ffff00);
+  color: #ffffff;
+}
+
+/* CONTACT INFO */
+.final-contact p {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* SOCIAL ICONS */
+.final-social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 28px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #000000;
 }
 
 /* ============================================================
@@ -2258,7 +2300,6 @@ INDUSTRY RESPONSIVE BREAKPOINTS
     CAREER SOMETHING MOBILE RESPONSIVE STYLING
    ============================================ */
 @media (max-width: 900px) {
-
   /* Stack boxes vertically */
   .career-content {
     flex-direction: column;
@@ -2343,5 +2384,37 @@ INDUSTRY RESPONSIVE BREAKPOINTS
 
   .changing-world-image img {
     max-width: 320px;
+  }
+}
+
+/* ============================================
+   FINAL PROMO / CONTACT SECTION RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+  .final-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .final-left,
+  .final-right {
+    width: 100%;
+  }
+  .final-people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .final-tagline {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .final-people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-tagline {
+    font-size: 28px;
   }
 }
